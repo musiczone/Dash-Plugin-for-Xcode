@@ -10,9 +10,11 @@
 #import <AppKit/AppKit.h>
 
 @interface OMQuickHelpPlugin : NSObject {
-	
+	NSSet *_integrationStyleMenuItems;
 }
 
-- (void)toggleOpenInDashEnabled:(id)sender;
++ (id)handlerForAction:(SEL)arg1 withSelectionSource:(id)arg2;
++ (id)currentEditor;
++ (void)clearLastQueryResult;
 
 @end
